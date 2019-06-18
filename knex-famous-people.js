@@ -17,6 +17,7 @@ const person = process.argv[2];
 
 knex.select('*').from('famous_people')
   .where('first_name', '=', person)
+  .orWhere('last_name', '=', person)
   .asCallback(function(err, rows) {
     if (err) return console.error(err);
     rows.forEach((element, index) => {
