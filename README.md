@@ -23,10 +23,5 @@ client.query('SELECT $1::text as message', ['Hello world!'], (err, res) => {
 })
 ```
 
-# Questions
-1. Navy Database
-2. Why does the query function take in an array of arguments?
-3. New keyword // Library using JSON - CREATE AN OBJECT THAT REPRESENTS THE CONNECTION WITH THE DB
-4. Go through famous-people.argv
 
 
